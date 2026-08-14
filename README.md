@@ -1,5 +1,6 @@
 #        
 🍬 US Candy Distributor — Sales & Logistics Intelligence
+
 An end-to-end Business Intelligence solution analyzing sales performance, product margins, 
 customer geography, and fulfillment logistics for a national candy distributor.  
 This project demonstrates advanced relational data modeling in **SQL Server (T-SQL)**, Star 
@@ -16,6 +17,7 @@ Schema architecture, explicit **DAX** measure design, and an interactive executi
 7. [Repository Structure](#-repository-structure) --- 
 ##        
 🏢 Project Overview & Business Problem
+
 Management of a national candy distributor needed actionable clarity across two primary 
 operational areas: 
 * **Product Profitability & Target Tracking:** Determine which candy divisions drive top-line 
@@ -24,6 +26,7 @@ revenue versus bottom-line margin, and track divisional performance against targ
 distribution, and operating cost concentration across geographic regions. --- 
 ##           
 🗄️ Data Architecture & Modeling
+
 The original data was provided as a flat transactional export alongside secondary dimension and 
 geographic lookup tables (`uszips`).  
 To maximize query speed, eliminate redundant data, and optimize DAX filter context, the 
@@ -40,6 +43,7 @@ database was re-architected into a **Star Schema**:
 `Quarter`, `YearMonth`. --- 
 ##        
   💻 SQL Engineering & Data Cleaning
+
 Key engineering challenges resolved in T-SQL: 
 * **Relational Normalization:** Deconstructed flat sales records into dedicated dimension 
 tables using `SELECT DISTINCT` and `INTO` DDL statements. 
